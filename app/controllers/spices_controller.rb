@@ -17,7 +17,7 @@ class SpicesController < ApplicationController
     def update
         spice = find_spice
         spice.update(spice_params)
-        render json: spice, status: :ok
+        render json: spice, status: :202
     end
     def destroy
         spice = find_spice
